@@ -22,46 +22,6 @@ export default new Router({
       name: 'Layout',
       component: Layout,
       children:[
-        {
-          path:'/Layout/crash',
-          name: 'crash',
-          component: () =>import('../view/Crash'),
-          serverName:'闪退',
-          children:[
-            {
-              path: '/Layout/echarts',
-              name: 'echarts',
-              component: () =>import('../view/Echarts'),
-              serverName:'闪退统计',
-              children:[]
-            },
-            {
-              path: '/Layout/table',
-              name: 'table',
-              component: () =>import('../view/Table'),
-              serverName:'闪退比较',
-              children:[]
-            }
-          ]
-        },
-        // {
-        //   path:'/layout',
-        //   redirect:'/Layout/market'
-        // },
-        // {
-        //   path: '/Layout/main',
-        //   name: 'main',
-        //   serverName:'地图',
-        //   component: () =>import('../view/Main'),
-        //   children:[],
-        // },
-        {
-          path: '/Layout/market',
-          name: 'market',
-          component: () =>import('../view/market'),
-          serverName:'市值榜',
-          children:[]
-        }
       ]
     }
   ]
