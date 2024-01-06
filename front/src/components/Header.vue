@@ -3,7 +3,6 @@
     <el-header class="uweb-header">
       <div class="uweb-box">
         <img src="../assets/logo.png" class="image">
-        <span>选址大师</span>
       </div>
         <span>admin</span>
       </el-header>
